@@ -17,4 +17,7 @@ class Player(private val hand: List<NumberTile>){
         return card.action(hand)
     }
 
+    fun checkHand(): List<NumberTile>{
+        return hand
+    }
 }
