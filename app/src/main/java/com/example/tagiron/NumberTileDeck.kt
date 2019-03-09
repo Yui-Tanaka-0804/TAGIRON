@@ -5,10 +5,10 @@ package com.example.tagiron
  */
 class NumberTileDeck{
     // いずれ山札の枚数変えたりしたいからめんどくさいことしてる
-    var tileDeck = listOf<NumberTile>()    // 数字タイルの山札
-    val tileColor = arrayOf("Red", "Blue", "Yellow")    // 使用する色(黄色は最後に配置する)
-    val tileNum = Pair(0, 9)    // 数字の最小、最大値
-    val tileMiddleNum = tileNum.second - tileNum.first / 2 + 1  // 中央の数字(5)
+    private var tileDeck = listOf<NumberTile>()    // 数字タイルの山札
+    private val tileColor = arrayOf("Red", "Blue", "Yellow")    // 使用する色(黄色は最後に配置する)
+    private val tileNum = Pair(0, 9)    // 数字の最小、最大値
+    private val tileMiddleNum = tileNum.second - tileNum.first / 2 + 1  // 中央の数字(5)
 
     /**
      * 初期化時に山札を作成

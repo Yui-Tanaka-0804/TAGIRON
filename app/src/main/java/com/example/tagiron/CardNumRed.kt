@@ -4,7 +4,7 @@ package com.example.tagiron
  * 質問カード
  * "赤の数字タイルは何枚ある？"
  */
-class Card_NumRed() : Card {
+class CardNumRed : Card {
     /**
      * 質問文
      */

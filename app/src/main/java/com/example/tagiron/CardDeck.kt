@@ -3,8 +3,8 @@ package com.example.tagiron
 /**
  * 質問カードの山札
  */
-class CardDeck(){
-    var cardDeck = listOf<Card>()    // 質問カードの山札
+class CardDeck {
+    private var cardDeck = listOf<Card>()    // 質問カードの山札
 
     /**
      * 初期化時に山札を作成
@@ -13,8 +13,8 @@ class CardDeck(){
         val initCardDeck = mutableListOf<Card>()   // 質問カードの山札(初期化用)
 
         // 質問カードの山札を作成
-        initCardDeck.add(Card_NumRed())
-        initCardDeck.add(Card_NumRed())
+        initCardDeck.add(CardNumRed())
+        initCardDeck.add(CardNumRed())
         // 質問カードをシャッフルしておく
         initCardDeck.shuffle()
 
