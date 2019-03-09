@@ -5,7 +5,7 @@ package com.example.tagiron
  *
  * @param hand 手札の数字タイル
  */
-class Player(private val hand: List<NumberTile>){
+class Player(val name:String, private val hand: List<NumberTile>){
 
     /**
      * 選択されたカードへの回答
